@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vídeos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .catalogo {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .video {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video iframe {
+            width: 100%;
+            height: 170px;
+        }
+        .descricao {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Catálogo de Vídeos</h1>
+    <div class="catalogo">
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/1Enn2WPfzDY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="descricao">
+                <h3>Vídeo 1</h3>
+                <p>Descrição breve do vídeo 1.</p>
+            </div>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/ujfuTTbgw2E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="descricao">
+                <h3>Vídeo 2</h3>
+                <p>Descrição breve do vídeo 2.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
